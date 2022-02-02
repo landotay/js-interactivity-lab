@@ -27,7 +27,7 @@ form.addEventListener('submit', addMovie)
 
 const  deleteMovie = (event) => {
     event.target.parentNode.remove()
-    message.textContent = `${event.target.parentNode.textContent.slice(0, -1)} Deleted!`
+    message.textContent = `${event.target.parentNode.firstChild.textContent} Deleted!`
     revealMessage()
 }
 
